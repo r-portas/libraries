@@ -1,17 +1,22 @@
 {
   "name": "@royportas/design-system",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && tsdown",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/node": "^26.0.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
+    "tsdown": "^0.22.3",
     "typescript": "^6.0.3",
     "vite": "^8.0.12"
   },

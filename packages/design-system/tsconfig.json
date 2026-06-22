@@ -8,7 +8,10 @@
     "skipLibCheck": true,
     "noEmit": true,
     "types": ["vite/client", "bun"],
-    "paths": { "@/*": ["./src/*"] }
+    "paths": {
+      "@/storybook/*": ["./.storybook/*"],
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src", "vite.config.ts"]
 }

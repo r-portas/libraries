@@ -1,20 +1,16 @@
 {
   "name": "libraries",
   "private": true,
-  "type": "module",
   "workspaces": [
     "packages/*"
   ],
+  "type": "module",
   "scripts": {
     "format": "oxfmt .",
     "lint": "oxlint ."
   },
   "devDependencies": {
-    "@types/bun": "latest",
     "oxfmt": "^0.55.0",
     "oxlint": "^1.70.0"
-  },
-  "peerDependencies": {
-    "typescript": "^6.0.3"
   }
 }

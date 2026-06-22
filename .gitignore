@@ -1,12 +1,3 @@
-# Vite
 dist
-
-# Bun
 node_modules
-
-# System files
 .DS_Store
-
-# Storybook
-*storybook.log
-storybook-static

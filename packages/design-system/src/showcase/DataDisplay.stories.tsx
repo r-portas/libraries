@@ -10,14 +10,18 @@ import {
   Paper,
   SimpleGrid,
   Spoiler,
-  Stack,
   Table,
   Text,
   ThemeIcon,
   Timeline,
   Title,
 } from "@mantine/core";
-import { CheckCircleIcon, GitBranchIcon, GitCommitIcon, GitPullRequestIcon } from "@phosphor-icons/react";
+import {
+  CheckCircleIcon,
+  GitBranchIcon,
+  GitCommitIcon,
+  GitPullRequestIcon,
+} from "@phosphor-icons/react";
 import preview from "storybook/preview";
 
 import { Section, ShowcasePage } from "@/showcase/showcase";

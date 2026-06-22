@@ -9,9 +9,16 @@
     "noEmit": true,
     "types": ["vite/client", "bun"],
     "paths": {
-      "@/storybook/*": ["./.storybook/*"],
+      "storybook/*": ["./.storybook/*"],
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "vite.config.ts"]
+  "include": [
+    "src",
+    "vite.config.ts",
+    // Note that `.storybook` doesn't work here, because of the leading dot
+    // So the full glob is required
+    ".storybook/**/*.ts",
+    ".storybook/**/*.tsx"
+  ]
 }

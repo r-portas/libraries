@@ -29,6 +29,7 @@ const meta = preview.meta({
   title: "Showcase/Inputs",
   parameters: {
     layout: "fullscreen",
+    options: { showPanel: false },
   },
 });
 

@@ -11,7 +11,14 @@ import {
   TextInput,
   Tooltip,
 } from "@mantine/core";
-import { CopyIcon, DotsThreeIcon, GearIcon, SignOutIcon, TrashIcon, UserIcon } from "@phosphor-icons/react";
+import {
+  CopyIcon,
+  DotsThreeIcon,
+  GearIcon,
+  SignOutIcon,
+  TrashIcon,
+  UserIcon,
+} from "@phosphor-icons/react";
 import preview from "storybook/preview";
 
 import { Section, ShowcasePage } from "@/showcase/showcase";
@@ -20,6 +27,7 @@ const meta = preview.meta({
   title: "Showcase/Overlays",
   parameters: {
     layout: "fullscreen",
+    options: { showPanel: false },
   },
 });
 

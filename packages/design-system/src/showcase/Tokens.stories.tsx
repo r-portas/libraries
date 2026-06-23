@@ -17,6 +17,7 @@ const meta = preview.meta({
   title: "Showcase/Theme Tokens",
   parameters: {
     layout: "fullscreen",
+    options: { showPanel: false },
   },
 });
 

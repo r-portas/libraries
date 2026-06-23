@@ -22,6 +22,7 @@ const meta = preview.meta({
   title: "Showcase/Feedback",
   parameters: {
     layout: "fullscreen",
+    options: { showPanel: false },
   },
 });
 
@@ -49,7 +50,12 @@ export const Feedback = meta.story({
           <Alert variant="light" color="teal" title="Success" icon={<CheckCircleIcon size={18} />}>
             Your changes were saved successfully.
           </Alert>
-          <Alert variant="light" color="yellow" title="WarningIcon" icon={<WarningIcon size={18} />}>
+          <Alert
+            variant="light"
+            color="yellow"
+            title="WarningIcon"
+            icon={<WarningIcon size={18} />}
+          >
             This action may have unintended consequences.
           </Alert>
           <Alert variant="filled" color="red" title="Error" icon={<XIcon size={18} />}>

@@ -19,6 +19,7 @@ const meta = preview.meta({
   title: "Showcase/Navigation",
   parameters: {
     layout: "fullscreen",
+    options: { showPanel: false },
   },
 });
 

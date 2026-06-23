@@ -30,6 +30,7 @@ const meta = preview.meta({
   title: "Showcase/Data Display",
   parameters: {
     layout: "fullscreen",
+    options: { showPanel: false },
   },
 });
 

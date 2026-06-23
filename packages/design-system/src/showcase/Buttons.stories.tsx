@@ -9,6 +9,7 @@ const meta = preview.meta({
   title: "Showcase/Buttons",
   parameters: {
     layout: "fullscreen",
+    options: { showPanel: false },
   },
 });
 

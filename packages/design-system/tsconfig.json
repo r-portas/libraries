@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "preserve",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": ["vite/client", "bun"],
+    "paths": {
+      "storybook/*": ["./.storybook/*"],
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "src",
+    "vite.config.ts",
+    // Note that `.storybook` doesn't work here, because of the leading dot
+    // So the full glob is required
+    ".storybook/**/*.ts",
+    ".storybook/**/*.tsx"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "@royportas/design-system",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "tsc --noEmit && bun --bun vite build",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@storybook/react-vite": "^10.4.6",
+    "@types/bun": "^1.3.14",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "postcss-preset-mantine": "^1.18.0",
+    "postcss-simple-vars": "^7.0.1",
+    "storybook": "^10.4.6",
+    "typescript": "^6.0.3",
+    "unplugin-dts": "^1.0.2",
+    "vite": "^8.0.16"
+  },
+  "peerDependencies": {
+    "@mantine/core": "^9.4.0",
+    "@mantine/hooks": "^9.4.0",
+    "@phosphor-icons/react": "^2.1.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}
